@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UC Reporter — Private Beta</title>
+<meta name="description" content="UC Reporter — Cisco UC maintenance reports, collected locally and exported in minutes. Private beta by invitation.">
+<style>
+  :root{
+    --navy:#14294a; --blue:#2c5e9b; --blue2:#3f7cc4;
+    --ink:#1b2532; --muted:#586a82; --line:#dce4f0;
+    --bg:#ffffff; --soft:#f4f7fc; --soft2:#eaf1fb;
+    --good:#16794a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue)}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px}
+  /* header */
+  header.site{display:flex;align-items:center;gap:12px;padding:18px 0}
+  .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--blue2));
+        display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;letter-spacing:.5px}
+  .brand{font-weight:700;font-size:1.05rem}
+  .brand small{display:block;font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  /* hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 60%,var(--blue2) 100%);color:#fff}
+  .hero .wrap{padding:52px 20px 60px}
+  .eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);margin:0 0 12px}
+  .hero h1{font-size:2.5rem;line-height:1.12;margin:0 0 14px;font-weight:800;text-wrap:balance}
+  .hero p.lead{font-size:1.18rem;color:rgba(255,255,255,.92);margin:0 0 26px;max-width:34em}
+  .cta{display:inline-block;background:#fff;color:var(--navy);font-weight:700;text-decoration:none;
+       padding:13px 26px;border-radius:10px;box-shadow:0 8px 22px rgba(4,16,38,.28)}
+  .cta:hover{transform:translateY(-1px)}
+  .hero .fineprint{margin:16px 0 0;font-size:.9rem;color:rgba(255,255,255,.8)}
+  /* sections */
+  section{padding:44px 0}
+  h2{font-size:1.5rem;margin:0 0 6px;font-weight:750}
+  .sub{color:var(--muted);margin:0 0 26px}
+  .soft{background:var(--soft)}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .step .n{width:30px;height:30px;border-radius:8px;background:var(--soft2);color:var(--blue);
+           font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .step h3{margin:0 0 6px;font-size:1.06rem}
+  .step p{margin:0;color:var(--muted);font-size:.96rem}
+  .step a{font-weight:600}
+  /* trust grid */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+  .trust li{margin:0 0 4px}
+  ul.trust{list-style:none;padding:0;margin:0}
+  ul.trust li::before{content:"🔒";margin-right:9px}
+  /* platforms pills */
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .pill{background:var(--soft2);color:var(--blue);border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:600}
+  /* link cards */
+  .links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .lcard{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink);background:#fff}
+  .lcard:hover{border-color:var(--blue2)}
+  .lcard b{display:block}
+  .lcard span{color:var(--muted);font-size:.9rem}
+  /* footer */
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  footer .wrap{padding:26px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media (max-width:720px){
+    .hero h1{font-size:2rem}
+    .steps,.links,.grid2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="site">
+    <div class="mark">UC</div>
+    <div class="brand">UC Reporter<small>Private Beta</small></div>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Private beta · by invitation</p>
+    <h1>Cisco UC maintenance reports, done in minutes.</h1>
+    <p class="lead">UC Reporter connects to your Cisco Unified Communications estate, collects inventory, resource, and health data, and produces a clean, customer-ready maintenance report — all on your own machine.</p>
+    <a class="cta" href="mailto:traincollabinfo@gmail.com?subject=UC%20Reporter%20Beta%20Application">Apply to the beta →</a>
+    <p class="fineprint">Local-only · offline · your data never leaves your machine.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p class="sub">One tool, from collection to a polished PDF report — organised Region → Location → Cluster.</p>
+    <div class="pills">
+      <span class="pill">CUCM</span><span class="pill">Unity Connection</span><span class="pill">IM&amp;P</span>
+      <span class="pill">UCCX</span><span class="pill">Expressway</span><span class="pill">CUBE / ISR</span>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>How the beta works</h2>
+    <p class="sub">Three simple steps from application to your first report.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Apply</h3>
+        <p>Tell us a little about your estate via the <a href="mailto:traincollabinfo@gmail.com?subject=UC%20Reporter%20Beta%20Application">beta participation form</a>. We review every application.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>Accept the agreement</h3>
+        <p>If you're in, we send your welcome pack and a short <a href="https://github.com/tcinfo-apps/uc-reporter/blob/main/NDA.md">NDA &amp; Beta Agreement</a>. Reply to confirm and we issue your personal licence.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Get your build</h3>
+        <p>You receive a private package: the installer, your personal licence file, the setup guide, and the feedback form link. Install, run a collection, export a report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Built to be safe to run</h2>
+    <p class="sub">Designed for real estates — nothing leaves your machine.</p>
+    <div class="grid2">
+      <ul class="trust">
+        <li><b>Local-only &amp; offline.</b> No cloud account, no telemetry.</li>
+        <li><b>Credentials in memory only.</b> Read-only, never written to disk.</li>
+        <li><b>Headless.</b> You only ever see the app — no console window.</li>
+      </ul>
+      <ul class="trust">
+        <li><b>Per-user install.</b> No administrator rights required.</li>
+        <li><b>Time-limited licence.</b> Personal to you, watermarked in reports.</li>
+        <li><b>You stay in control.</b> All data lives on your machine; delete it anytime.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Learn more</h2>
+    <p class="sub">Everything a tester needs, in one place.</p>
+    <div class="links">
+      <a class="lcard" href="https://github.com/tcinfo-apps/uc-reporter/blob/main/ROADMAP.md"><b>Roadmap →</b><span>What's shipping and what's next</span></a>
+      <a class="lcard" href="https://github.com/tcinfo-apps/uc-reporter/blob/main/FAQ.md"><b>FAQ →</b><span>Install, licensing, privacy, usage</span></a>
+      <a class="lcard" href="https://t.me/+FCZtOL2eCoA2MjBi"><b>Community →</b><span>Chat with us on Telegram</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Confidential — by invitation only. Not for redistribution.</span>
+    <span>© TrainCollab · <a href="mailto:traincollabinfo@gmail.com">traincollabinfo@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
