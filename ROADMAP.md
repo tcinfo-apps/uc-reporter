@@ -5,7 +5,7 @@ with your feedback — dates aren't promises, but direction is real.
 Last updated: **2026-07-07**.
 
 > Want to influence what's next? Use the **beta feedback & ideas form**
-> ([link](https://docs.google.com/forms/d/e/1FAIpQLScAg_lLgk4eEjQ-pw0wL8fk6NC81SUrJKihvnyTMfdvCFPrEQ/viewform?usp=header))
+> ([link](https://forms.gle/p33jt2bybVYbkhdH7))
 > or chat with us on [Telegram](https://t.me/+FCZtOL2eCoA2MjBi).
 
 ---
